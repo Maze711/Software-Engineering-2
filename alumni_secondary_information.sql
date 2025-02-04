@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2025 at 03:20 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- Generation Time: Feb 04, 2025 at 07:29 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,17 +33,18 @@ CREATE TABLE `alumni_secondary_information` (
   `collegedepartment` varchar(50) NOT NULL,
   `yeargraduated` varchar(50) NOT NULL,
   `civilstatus` varchar(50) NOT NULL,
-  `workstatus` varchar(50) NOT NULL
+  `workstatus` varchar(50) NOT NULL,
+  `job_title` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `alumni_secondary_information`
 --
 
-INSERT INTO `alumni_secondary_information` (`id`, `alumni_id`, `collegedepartment`, `yeargraduated`, `civilstatus`, `workstatus`) VALUES
-(1, 1, 'Computer Science', '2017', 'Single', 'Employed'),
-(2, 2, 'Information Technology', '2018', 'Married', 'Self-Employed'),
-(3, 3, 'Software Engineering', '2016', 'Single', 'Unemployed');
+INSERT INTO `alumni_secondary_information` (`id`, `alumni_id`, `collegedepartment`, `yeargraduated`, `civilstatus`, `workstatus`, `job_title`) VALUES
+(1, 17457390, 'Computer Science', '2017', 'Single', 'Employed', 'Senior Data Analyst'),
+(2, 18946837, 'Information Technology', '2018', 'Married', 'Self-Employed', 'Free Lance Web Designer'),
+(3, 16490395, 'Software Engineering', '2016', 'Single', 'Unemployed', '');
 
 --
 -- Indexes for dumped tables
